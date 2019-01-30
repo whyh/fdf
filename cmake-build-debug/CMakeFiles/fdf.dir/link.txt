@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/fdf.dir/main.c.o CMakeFiles/fdf.dir/libft/ft_gnl/ft_gnl.h.c.o  -o fdf 
