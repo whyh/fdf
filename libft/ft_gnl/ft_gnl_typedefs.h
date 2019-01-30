@@ -13,7 +13,7 @@
 #ifndef FT_GNL_TYPEDEFS_H
 # define FT_GNL_TYPEDEFS_H
 
-# define GNL_BUFF_SIZE 80
+# define GNL_BUFF_SIZE 1
 
 typedef struct		s_fd
 {

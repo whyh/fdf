@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/01/21 20:30:33 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/01/30 15:27:24 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,30 +22,32 @@ LIBFT_PATH = libft/
 LIBFT = libft.a
 
 FDF_PATH = ffdf/
-FDF_INCS = 		fdf.h
-FDF_SRCS =		fdf.c
+FDF_INCS = 		fdf.h\
+				fdf_typedefs.h
+FDF_SRCS =		fdf.c\
+				fdf_parse_map.c
 FDF_OBJS = $(FDF_SRCS:%.c=$(FDF_OBJS_DIR)/%.o)
 FDF_OBJS_DIR = $(OBJS_DIR)
 
 all: libft $(NAME)
 
 $(NAME): $(FDF_OBJS)
-	$(CC) $(CFLAGS) $^ $(CLIBS) -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME)
+	@$(CC) $(CFLAGS) $^ $(CLIBS) -L $(LIBFT_PATH) -l$(patsubst %.a,%,$(LIBFT:lib%=%)) -o $(NAME)
 
 $(FDF_OBJS_DIR)/%.o: $(FDF_PATH)%.c
-	mkdir -p $(FDF_OBJS_DIR)
-	$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(FDF_PATH),$(FDF_INCS))) -o $@
+	@mkdir -p $(FDF_OBJS_DIR)
+	@$(CC) $(CFLAGS) -c $< $(addprefix -I.,$(addprefix $(FDF_PATH),$(FDF_INCS))) -o $@
 
 libft:
-	cd libft && make $(LIBFT)
+	@cd libft && make $(LIBFT)
 
 clean:
-	cd libft && make clean
-	$(RM) $(OBJS_DIR)
+	@cd libft && make clean
+	@$(RM) $(OBJS_DIR)
 
 fclean: clean
-	cd libft && make fclean
-	$(RM) $(NAME)
+	@cd libft && make fclean
+	@$(RM) $(NAME)
 
 re: fclean all
 
@@ -54,4 +56,7 @@ norm:
 	@norminette $(addprefix $(FDF_PATH),$(FDF_SRCS)) \
 	$(addprefix $(FDF_PATH),$(FDF_INCS))
 
-.PHONY: all clean fclean re norm libft
+run:
+	@./fdf map | cat -e
+
+.PHONY: all clean fclean re norm libft run
