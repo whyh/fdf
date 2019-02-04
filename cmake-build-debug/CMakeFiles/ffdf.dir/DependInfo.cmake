@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o"
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o"
-  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o"
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o"
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_help_menu.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o"
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_inits.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o"

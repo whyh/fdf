@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/04 16:05:52 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/04 16:26:53 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ FDF_SRCS =		fdf.c\
 				fdf_mouse_control.c\
 				fdf_key_control.c\
 				fdf_inits.c\
-				fdf_exit.c
+				fdf_complete_map.c
 FDF_OBJS = $(FDF_SRCS:%.c=$(FDF_OBJS_DIR)/%.o)
 FDF_OBJS_DIR = $(OBJS_DIR)
 

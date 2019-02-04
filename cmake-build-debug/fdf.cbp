@@ -91,10 +91,10 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h">
 			<Option target="ffdf"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c">
 			<Option target="ffdf"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c">
 			<Option target="ffdf"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c">

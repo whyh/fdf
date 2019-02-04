@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/03 19:27:02 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/03 21:36:23 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 19:13:40 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ static void	fdf_inf(t_fdf_ptr *ptr)
 
 static void	fdf_background(t_fdf_ptr *ptr)
 {
-	int		size_line;
-	int		i;
-	int		*img;
+	int	size_line;
+	int	i;
+	int	*img;
 
 	if (ptr->imgs->imgb == NULL)
 	{
@@ -48,7 +48,7 @@ static void	fdf_background(t_fdf_ptr *ptr)
 			*img++ = FDF_RGB_BG;
 	}
 	mlx_put_image_to_window(ptr->main->mlx, ptr->main->win, ptr->imgs->imgb, 0,
-							0);
+	0);
 }
 
 void		fdf_compose_slide(t_fdf_ptr *ptr)

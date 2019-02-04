@@ -45,7 +45,6 @@ add_executable( ffdf ${LIBFT}
                 ffdf/fdf_interface.c
                 ffdf/fdf_mouse_control.c
                 ffdf/fdf_key_control.c
-                ffdf/fdf_exit.c
-                ffdf/fdf_inits.c)
+        ffdf/fdf_inits.c ffdf/fdf_complete_map.c)
 
 link_libraries(libft/libft.a)

@@ -746,9 +746,22 @@ CMakeFiles/ffdf.dir/ffdf/fdf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffdf.dir/ffdf/fdf.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/fdf/ffdf/fdf.c -o CMakeFiles/ffdf.dir/ffdf/fdf.c.s
 
+CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o: CMakeFiles/ffdf.dir/flags.make
+CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o: ../ffdf/fdf_complete_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o   -c /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c
+
+CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c > CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.i
+
+CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c -o CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.s
+
 CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: CMakeFiles/ffdf.dir/flags.make
 CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../ffdf/fdf_draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o   -c /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c
 
 CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.i: cmake_force
@@ -758,19 +771,6 @@ CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.i: cmake_force
 CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c -o CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.s
-
-CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: CMakeFiles/ffdf.dir/flags.make
-CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../ffdf/fdf_exit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o   -c /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c
-
-CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c > CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.i
-
-CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c -o CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.s
 
 CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: CMakeFiles/ffdf.dir/flags.make
 CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../ffdf/fdf_gradient.c
@@ -1269,8 +1269,8 @@ ffdf_OBJECTS = \
 "CMakeFiles/ffdf.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/ffdf.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/ffdf.dir/ffdf/fdf.c.o" \
+"CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o" \
 "CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o" \
-"CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o" \
 "CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o" \
 "CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o" \
 "CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o" \
@@ -1362,8 +1362,8 @@ ffdf: CMakeFiles/ffdf.dir/libft/ft_strtrim.c.o
 ffdf: CMakeFiles/ffdf.dir/libft/ft_tolower.c.o
 ffdf: CMakeFiles/ffdf.dir/libft/ft_toupper.c.o
 ffdf: CMakeFiles/ffdf.dir/ffdf/fdf.c.o
+ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o
 ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o
-ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o
 ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o
 ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o
 ffdf: CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o

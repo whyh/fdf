@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/03 14:13:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 13:45:06 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 15:13:39 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ static void	fdf_help_text2(t_fdf_main main, int i)
 static void	fdf_help_text(t_fdf_main main, int i)
 {
 	mlx_string_put(main.mlx, main.win, FDF_LINE_PADD_X,
-	FDF_WIN_Y / 5 + (i += 0), FDF_H_MENU_FONT, "use keys 1 - 9");
+	FDF_WIN_Y / 5 + (i += 0), FDF_H_MENU_FONT, "use keys 1 - 4");
 	mlx_string_put(main.mlx, main.win, FDF_LINE_PADD_X,
 	FDF_WIN_Y / 5 + (i += FDF_LINE_PADD_Y), FDF_H_MENU_FONT, "to swap between");
 	mlx_string_put(main.mlx, main.win, FDF_LINE_PADD_X,

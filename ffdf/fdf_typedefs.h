@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 11:36:39 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 15:28:05 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 20:24:50 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FDF_TYPEDEFS_H
 
 # define FDF_MAX_MAP 1000
-# define FDF_ALT_RANGE 1000
+# define FDF_ALT_RANGE 50
 # define FDF_WIN_Y 1000
 # define FDF_WIN_X 1500
 # define FDF_OFF_X FDF_WIN_X / 2
@@ -49,6 +49,7 @@ typedef struct	s_fdf_main{
 	int			map_x;
 	int			map_y;
 	int			map_max_alt;
+	int			map_min_alt;
 	int			offx;
 	int			offy;
 	int			*color;
@@ -70,6 +71,7 @@ typedef struct	s_fdf_loop{
 	int			lctrl;
 	int			lmouse_x;
 	int			lmouse_y;
+	int			keyr;
 	int			lmouse;
 	int			lcmd;
 	int			keyh;

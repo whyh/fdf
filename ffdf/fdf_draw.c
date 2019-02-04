@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 16:25:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 14:12:52 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 19:21:26 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,14 @@ static void	fdf_draw_line(t_fdf_p2d *p2d, t_fdf_main main, int i, t_fdf_l2d l2d)
 	}
 }
 
+static int	fdf_draw_optimization(t_fdf_p2d p2d, int i)
+{
+	if ((p2d.x[p2d.p] <= FDF_WIN_X && p2d.x[p2d.p + i] <= FDF_WIN_X)
+	|| (p2d.y[p2d.p] <= FDF_WIN_Y && p2d.y[p2d.p + i] <= FDF_WIN_Y))
+		return (1);
+	return (0);
+}
+
 void		fdf_draw(t_fdf_p2d *p2d, t_fdf_main main)
 {
 	int			length;
@@ -105,9 +113,11 @@ void		fdf_draw(t_fdf_p2d *p2d, t_fdf_main main)
 		l2d.x0 = p2d->x[p2d->p];
 		l2d.y0 = p2d->y[p2d->p];
 		l2d.color0 = p2d->color[p2d->p];
-		if (length-- > 1)
+		if (length-- > 1 && fdf_draw_optimization(*p2d, 1))
 			fdf_draw_line(p2d, main, 1, l2d);
-		if (main.map_y > 1)
+		else
+			fdf_draw_line(p2d, main, 0, l2d);
+		if (main.map_y > 1 && fdf_draw_optimization(*p2d, main.map_x))
 			fdf_draw_line(p2d, main, main.map_x, l2d);
 		if (length == 0)
 		{

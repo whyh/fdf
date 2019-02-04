@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/01 18:08:11 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 15:18:12 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 16:26:53 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int				fdf_get_gradient(t_fdf_main main, int alt)
 
 	if (alt < 0)
 		alt = -alt;
-	percent = fdf_gradient_percent(alt, 0, main.map_max_alt);
+	percent = fdf_gradient_percent(alt, main.map_min_alt, main.map_max_alt);
 	r = fdf_get_color((main.rgb0 >> 16), (main.rgb1 >> 16), percent);
 	g = fdf_get_color((main.rgb0 >> 8) & 255, (main.rgb1 >> 8) & 255, percent);
 	b = fdf_get_color(main.rgb0 & 255, main.rgb1 & 255, percent);

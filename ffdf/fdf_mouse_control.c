@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/03 21:27:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 10:47:02 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 17:03:46 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int	fdf_mouse_press(int button, int x, int y, void *param)
 		fdf_altitude(-FDF_ALT_MOD_STEP, ptr);
 	else if (button == 4 && ptr->loop->lcmd == 1)
 		fdf_altitude(FDF_ALT_MOD_STEP, ptr);
-	else if (button == 1)
+	else if (button == 1
+	&& abs(x - ptr->main->offx) < 100 && abs(y - ptr->main->offy) < 100)
 	{
 		ptr->loop->lmouse = 1;
 		ptr->loop->lmouse_x = x;
@@ -39,8 +40,7 @@ int	fdf_mouse_move(int x, int y, void *param)
 	t_fdf_ptr	*ptr;
 
 	ptr = param;
-	if (ptr->loop->lmouse == 1 && ptr->loop->lctrl == 1
-		&& abs(x - ptr->main->offx) < 100 && abs(y - ptr->main->offy) < 100)
+	if (ptr->loop->lmouse == 1 && ptr->loop->lctrl == 1)
 		fdf_move(x, y, ptr);
 	return (1);
 }

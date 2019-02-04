@@ -6,11 +6,47 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 11:20:03 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 15:57:31 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 19:48:05 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
+
+static void	fdf_new_window(t_fdf_main *main, char *map)
+{
+	char	*title;
+
+	title = ft_strjoin("fdf: ", map);
+	main->mlx = mlx_init();
+	main->win = mlx_new_window(main->mlx, FDF_WIN_X, FDF_WIN_Y, title);
+	ft_strdel(&title);
+}
+
+static void	fdf_memdel(t_fdf_ptr *ptr)
+{
+	int i;
+
+	ft_memdel((void**)&(ptr->p2d->x));
+	ft_memdel((void**)&(ptr->p2d->y));
+	i = 0;
+	while (i < ptr->main->map_y)
+		ft_memdel((void**)(&(ptr->main->p3d[i++])));
+	ft_memdel((void**)(ptr->main->p3d));
+	if (ptr->imgs->imgb != NULL)
+		mlx_destroy_image(ptr->main->mlx, ptr->imgs->imgb);
+	if (ptr->imgs->imgh != NULL)
+		mlx_destroy_image(ptr->main->mlx, ptr->imgs->imgh);
+}
+
+static int	fdf_close(void *param)
+{
+	t_fdf_ptr	*ptr;
+
+	ptr = param;
+	fdf_memdel(ptr);
+	exit(0);
+	return (1);
+}
 
 static void	fdf_loop(t_fdf_ptr *ptr)
 {
@@ -47,7 +83,7 @@ int			main(int argc, char **argv)
 	projs[20] = &fdf_projection_top;
 	projs[21] = &fdf_projection_side;
 	fdf_set_init_values(&ptr, &main, &p2d, &imgs);
-	fdf_project(0, &ptr);
+	fdf_project(0, &ptr, 1);
 	fdf_loop(&ptr);
 	fdf_memdel(&ptr);
 	return (1);

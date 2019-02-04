@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
 /Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
 math.h
 -
@@ -19,46 +15,6 @@ mlx.h
 /Users/dderevyn/CLionProjects/fdf/libft/libft.h
 fdf_typedefs.h
 /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_typedefs.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_help_menu.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_inits.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interact.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interface.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_key_control.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_mouse_control.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
-
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse.c
-fdf.h
-/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h
 
 /Users/dderevyn/CLionProjects/fdf/ffdf/fdf_projections.c
 fdf.h

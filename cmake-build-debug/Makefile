@@ -150,6 +150,33 @@ ffdf/fdf.c.s:
 	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf.c.s
 .PHONY : ffdf/fdf.c.s
 
+ffdf/fdf_complete_map.o: ffdf/fdf_complete_map.c.o
+
+.PHONY : ffdf/fdf_complete_map.o
+
+# target to build an object file
+ffdf/fdf_complete_map.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.o
+.PHONY : ffdf/fdf_complete_map.c.o
+
+ffdf/fdf_complete_map.i: ffdf/fdf_complete_map.c.i
+
+.PHONY : ffdf/fdf_complete_map.i
+
+# target to preprocess a source file
+ffdf/fdf_complete_map.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.i
+.PHONY : ffdf/fdf_complete_map.c.i
+
+ffdf/fdf_complete_map.s: ffdf/fdf_complete_map.c.s
+
+.PHONY : ffdf/fdf_complete_map.s
+
+# target to generate assembly for a file
+ffdf/fdf_complete_map.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_complete_map.c.s
+.PHONY : ffdf/fdf_complete_map.c.s
+
 ffdf/fdf_draw.o: ffdf/fdf_draw.c.o
 
 .PHONY : ffdf/fdf_draw.o
@@ -176,33 +203,6 @@ ffdf/fdf_draw.s: ffdf/fdf_draw.c.s
 ffdf/fdf_draw.c.s:
 	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.s
 .PHONY : ffdf/fdf_draw.c.s
-
-ffdf/fdf_exit.o: ffdf/fdf_exit.c.o
-
-.PHONY : ffdf/fdf_exit.o
-
-# target to build an object file
-ffdf/fdf_exit.c.o:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o
-.PHONY : ffdf/fdf_exit.c.o
-
-ffdf/fdf_exit.i: ffdf/fdf_exit.c.i
-
-.PHONY : ffdf/fdf_exit.i
-
-# target to preprocess a source file
-ffdf/fdf_exit.c.i:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.i
-.PHONY : ffdf/fdf_exit.c.i
-
-ffdf/fdf_exit.s: ffdf/fdf_exit.c.s
-
-.PHONY : ffdf/fdf_exit.s
-
-# target to generate assembly for a file
-ffdf/fdf_exit.c.s:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.s
-.PHONY : ffdf/fdf_exit.c.s
 
 ffdf/fdf_gradient.o: ffdf/fdf_gradient.c.o
 
@@ -2538,12 +2538,12 @@ help:
 	@echo "... ffdf/fdf.o"
 	@echo "... ffdf/fdf.i"
 	@echo "... ffdf/fdf.s"
+	@echo "... ffdf/fdf_complete_map.o"
+	@echo "... ffdf/fdf_complete_map.i"
+	@echo "... ffdf/fdf_complete_map.s"
 	@echo "... ffdf/fdf_draw.o"
 	@echo "... ffdf/fdf_draw.i"
 	@echo "... ffdf/fdf_draw.s"
-	@echo "... ffdf/fdf_exit.o"
-	@echo "... ffdf/fdf_exit.i"
-	@echo "... ffdf/fdf_exit.s"
 	@echo "... ffdf/fdf_gradient.o"
 	@echo "... ffdf/fdf_gradient.i"
 	@echo "... ffdf/fdf_gradient.s"

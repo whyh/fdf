@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/03 21:24:39 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 15:10:57 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 18:22:57 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void		fdf_zoom(int step, t_fdf_ptr *ptr)
 	ptr->p2d->padd += step;
 	if (ptr->p2d->padd < 1)
 		ptr->p2d->padd = 1;
-	else if (ptr->p2d->padd > 50)
+	if (ptr->p2d->padd > 50)
 		ptr->p2d->padd = 50;
 	fdf_p3d_to_p2d(ptr->main, ptr->p2d);
 	ptr->projs[ptr->main->curr_proj](ptr->p2d);
@@ -70,29 +70,31 @@ void		fdf_move(int x, int y, t_fdf_ptr *ptr)
 
 void		fdf_altitude(int step, t_fdf_ptr *ptr)
 {
+	int	sign;
+
+	sign = 1;
+	if ((ptr->loop->keyr == 1 && ptr->p2d->alt_mod > 0)
+	|| (ptr->loop->keyr == 0 && ptr->p2d->alt_mod < 0))
+		sign = -1;
 	if (step < 0)
 	{
 		step = -step;
-		if (ptr->p2d->alt_mod / step >= 0)
-			ptr->p2d->alt_mod /= step;
+		if (abs(ptr->p2d->alt_mod / step) >= 1)
+			ptr->p2d->alt_mod = ptr->p2d->alt_mod / step * sign;
 	}
 	else if (step > 0)
-	{
-		if (ptr->p2d->alt_mod == 0)
-			ptr->p2d->alt_mod = FDF_ALT_MOD;
-		if (ptr->p2d->alt_mod * step < FDF_ALT_RANGE)
-			ptr->p2d->alt_mod *= step;
-	}
+		if (abs(ptr->p2d->alt_mod * step) < FDF_ALT_RANGE)
+			ptr->p2d->alt_mod = ptr->p2d->alt_mod * step * sign;
 	fdf_p3d_to_p2d(ptr->main, ptr->p2d);
 	ptr->projs[ptr->main->curr_proj](ptr->p2d);
 	fdf_compose_slide(ptr);
 }
 
-void		fdf_project(int keycode, t_fdf_ptr *ptr)
+void		fdf_project(int keycode, t_fdf_ptr *ptr, int clean)
 {
 	if (keycode != 0)
 		ptr->main->curr_proj = keycode;
-	if (!(ptr->loop) || ptr->loop->keyh == 0)
+	if (clean == 1)
 	{
 		ptr->main->offx = FDF_OFF_X;
 		ptr->main->offy = FDF_OFF_Y;
@@ -102,4 +104,6 @@ void		fdf_project(int keycode, t_fdf_ptr *ptr)
 		ptr->projs[ptr->main->curr_proj](ptr->p2d);
 	}
 	fdf_compose_slide(ptr);
+	if (ptr->loop && ptr->loop->keyh == 1)
+		fdf_help_menu(ptr);
 }

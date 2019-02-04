@@ -6,17 +6,19 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 11:19:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 15:14:53 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 16:25:20 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-static void	fdf_parse_map(t_fdf_main *main, char *line, int row, int i)
+static void	fdf_parse_map(t_fdf_main *main, char *line, int row)
 {
 	int	x;
+	int i;
 
 	x = 0;
+	i = 0;
 	main->p3d[row] = ft_memalloc(main->map_x * sizeof(int*));
 	while (x < main->map_x && line[i])
 	{
@@ -28,21 +30,22 @@ static void	fdf_parse_map(t_fdf_main *main, char *line, int row, int i)
 			main->p3d[row][x] = ft_atoi(&(line[i]));
 			if (main->map_max_alt < main->p3d[row][x])
 				main->map_max_alt = main->p3d[row][x];
+			else if (main->map_min_alt > main->p3d[row][x])
+				main->map_min_alt = main->p3d[row][x];
 			while (ft_strin(DEC, line[i]))
 				++i;
 			fdf_parse_gradient(main, line, &i, ((row * main->map_x) + x));
 			++x;
 		}
 	}
-	while (x++ < main->map_x)
-	{
-		main->p3d[row][x] = 0;
-		main->color[(row * main->map_x) + x - 1] = FDF_FLAGX;
-	}
+	fdf_complete_map(main, x, row);
 }
 
-static int	fdf_map_size(t_fdf_main *main, char const *line, int i)
+static int	fdf_map_size(t_fdf_main *main, char const *line)
 {
+	int i;
+
+	i = 0;
 	while (line[i])
 	{
 		if (ft_strin(SIGNS, line[i]) && ft_strin(DEC, line[i + 1]))
@@ -79,13 +82,13 @@ static int	fdf_read_file(t_fdf_main *main, int fd)
 			ft_strdel(&line);
 			return (0);
 		}
-		if (main->map_y == 0 && line[fdf_map_size(main, line, 0)] != '\0')
+		if (main->map_y == 0 && line[fdf_map_size(main, line)] != '\0')
 		{
 			ft_printf("error: map contains forbidden symbols\n");
 			ft_strdel(&line);
 			return (0);
 		}
-		fdf_parse_map(main, line, main->map_y++, 0);
+		fdf_parse_map(main, line, main->map_y++);
 		ft_strdel(&line);
 	}
 	ft_strdel(&line);
