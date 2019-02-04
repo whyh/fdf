@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/01/30 15:27:24 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/04 16:05:52 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 CLIBS = -lmlx -framework OpenGL -framework AppKit
 RM = /bin/rm -rf
+CP = cp -rf
 
 LIBFT_PATH = libft/
 LIBFT = libft.a
@@ -25,7 +26,17 @@ FDF_PATH = ffdf/
 FDF_INCS = 		fdf.h\
 				fdf_typedefs.h
 FDF_SRCS =		fdf.c\
-				fdf_parse_map.c
+				fdf_parse.c\
+				fdf_projections.c\
+				fdf_draw.c\
+				fdf_interact.c\
+				fdf_interface.c\
+				fdf_gradient.c\
+				fdf_help_menu.c\
+				fdf_mouse_control.c\
+				fdf_key_control.c\
+				fdf_inits.c\
+				fdf_exit.c
 FDF_OBJS = $(FDF_SRCS:%.c=$(FDF_OBJS_DIR)/%.o)
 FDF_OBJS_DIR = $(OBJS_DIR)
 
@@ -57,6 +68,16 @@ norm:
 	$(addprefix $(FDF_PATH),$(FDF_INCS))
 
 run:
-	@./fdf map | cat -e
+	@./fdf map
 
-.PHONY: all clean fclean re norm libft run
+test: rmt
+	@mkdir -p test
+	@$(CP) $(LIBFT_PATH) test/$(LIBFT_PATH)
+	@$(CP) $(FDF_PATH) test/$(FDF_PATH)
+	@$(CP) author test/author
+	@$(CP) Makefile test/Makefile
+
+rmt:
+	@$(RM) test
+
+.PHONY: all clean fclean re norm libft run test rmt

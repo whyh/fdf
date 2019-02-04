@@ -5,7 +5,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf.c.o"
-  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse_map.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_help_menu.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_inits.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interact.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interface.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_key_control.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_mouse_control.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o"
+  "/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_projections.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o"
   "/Users/dderevyn/CLionProjects/fdf/libft/ft_atoi.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/libft/ft_atoi.c.o"
   "/Users/dderevyn/CLionProjects/fdf/libft/ft_atoibase.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/libft/ft_atoibase.c.o"
   "/Users/dderevyn/CLionProjects/fdf/libft/ft_bzero.c" "/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/CMakeFiles/ffdf.dir/libft/ft_bzero.c.o"

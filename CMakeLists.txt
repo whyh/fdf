@@ -35,7 +35,17 @@ add_executable( ffdf ${LIBFT}
                 libft/ft_printf/ft_printf_collor.c
                 libft/ft_printf/ft_printf.h
                 ffdf/fdf.h
-                ffdf/fdf_parse_map.c
-                ffdf/fdf_typedefs.h)
+                ffdf/fdf_parse.c
+                ffdf/fdf_typedefs.h
+                ffdf/fdf_draw.c
+                ffdf/fdf_projections.c
+        ffdf/fdf_gradient.c
+                ffdf/fdf_interact.c
+                ffdf/fdf_help_menu.c
+                ffdf/fdf_interface.c
+                ffdf/fdf_mouse_control.c
+                ffdf/fdf_key_control.c
+                ffdf/fdf_exit.c
+                ffdf/fdf_inits.c)
 
 link_libraries(libft/libft.a)

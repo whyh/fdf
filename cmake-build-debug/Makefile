@@ -150,32 +150,302 @@ ffdf/fdf.c.s:
 	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf.c.s
 .PHONY : ffdf/fdf.c.s
 
-ffdf/fdf_parse_map.o: ffdf/fdf_parse_map.c.o
+ffdf/fdf_draw.o: ffdf/fdf_draw.c.o
 
-.PHONY : ffdf/fdf_parse_map.o
+.PHONY : ffdf/fdf_draw.o
 
 # target to build an object file
-ffdf/fdf_parse_map.c.o:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o
-.PHONY : ffdf/fdf_parse_map.c.o
+ffdf/fdf_draw.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o
+.PHONY : ffdf/fdf_draw.c.o
 
-ffdf/fdf_parse_map.i: ffdf/fdf_parse_map.c.i
+ffdf/fdf_draw.i: ffdf/fdf_draw.c.i
 
-.PHONY : ffdf/fdf_parse_map.i
+.PHONY : ffdf/fdf_draw.i
 
 # target to preprocess a source file
-ffdf/fdf_parse_map.c.i:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.i
-.PHONY : ffdf/fdf_parse_map.c.i
+ffdf/fdf_draw.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.i
+.PHONY : ffdf/fdf_draw.c.i
 
-ffdf/fdf_parse_map.s: ffdf/fdf_parse_map.c.s
+ffdf/fdf_draw.s: ffdf/fdf_draw.c.s
 
-.PHONY : ffdf/fdf_parse_map.s
+.PHONY : ffdf/fdf_draw.s
 
 # target to generate assembly for a file
-ffdf/fdf_parse_map.c.s:
-	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.s
-.PHONY : ffdf/fdf_parse_map.c.s
+ffdf/fdf_draw.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.s
+.PHONY : ffdf/fdf_draw.c.s
+
+ffdf/fdf_exit.o: ffdf/fdf_exit.c.o
+
+.PHONY : ffdf/fdf_exit.o
+
+# target to build an object file
+ffdf/fdf_exit.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o
+.PHONY : ffdf/fdf_exit.c.o
+
+ffdf/fdf_exit.i: ffdf/fdf_exit.c.i
+
+.PHONY : ffdf/fdf_exit.i
+
+# target to preprocess a source file
+ffdf/fdf_exit.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.i
+.PHONY : ffdf/fdf_exit.c.i
+
+ffdf/fdf_exit.s: ffdf/fdf_exit.c.s
+
+.PHONY : ffdf/fdf_exit.s
+
+# target to generate assembly for a file
+ffdf/fdf_exit.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.s
+.PHONY : ffdf/fdf_exit.c.s
+
+ffdf/fdf_gradient.o: ffdf/fdf_gradient.c.o
+
+.PHONY : ffdf/fdf_gradient.o
+
+# target to build an object file
+ffdf/fdf_gradient.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o
+.PHONY : ffdf/fdf_gradient.c.o
+
+ffdf/fdf_gradient.i: ffdf/fdf_gradient.c.i
+
+.PHONY : ffdf/fdf_gradient.i
+
+# target to preprocess a source file
+ffdf/fdf_gradient.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.i
+.PHONY : ffdf/fdf_gradient.c.i
+
+ffdf/fdf_gradient.s: ffdf/fdf_gradient.c.s
+
+.PHONY : ffdf/fdf_gradient.s
+
+# target to generate assembly for a file
+ffdf/fdf_gradient.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.s
+.PHONY : ffdf/fdf_gradient.c.s
+
+ffdf/fdf_help_menu.o: ffdf/fdf_help_menu.c.o
+
+.PHONY : ffdf/fdf_help_menu.o
+
+# target to build an object file
+ffdf/fdf_help_menu.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o
+.PHONY : ffdf/fdf_help_menu.c.o
+
+ffdf/fdf_help_menu.i: ffdf/fdf_help_menu.c.i
+
+.PHONY : ffdf/fdf_help_menu.i
+
+# target to preprocess a source file
+ffdf/fdf_help_menu.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.i
+.PHONY : ffdf/fdf_help_menu.c.i
+
+ffdf/fdf_help_menu.s: ffdf/fdf_help_menu.c.s
+
+.PHONY : ffdf/fdf_help_menu.s
+
+# target to generate assembly for a file
+ffdf/fdf_help_menu.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.s
+.PHONY : ffdf/fdf_help_menu.c.s
+
+ffdf/fdf_inits.o: ffdf/fdf_inits.c.o
+
+.PHONY : ffdf/fdf_inits.o
+
+# target to build an object file
+ffdf/fdf_inits.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o
+.PHONY : ffdf/fdf_inits.c.o
+
+ffdf/fdf_inits.i: ffdf/fdf_inits.c.i
+
+.PHONY : ffdf/fdf_inits.i
+
+# target to preprocess a source file
+ffdf/fdf_inits.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.i
+.PHONY : ffdf/fdf_inits.c.i
+
+ffdf/fdf_inits.s: ffdf/fdf_inits.c.s
+
+.PHONY : ffdf/fdf_inits.s
+
+# target to generate assembly for a file
+ffdf/fdf_inits.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.s
+.PHONY : ffdf/fdf_inits.c.s
+
+ffdf/fdf_interact.o: ffdf/fdf_interact.c.o
+
+.PHONY : ffdf/fdf_interact.o
+
+# target to build an object file
+ffdf/fdf_interact.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o
+.PHONY : ffdf/fdf_interact.c.o
+
+ffdf/fdf_interact.i: ffdf/fdf_interact.c.i
+
+.PHONY : ffdf/fdf_interact.i
+
+# target to preprocess a source file
+ffdf/fdf_interact.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.i
+.PHONY : ffdf/fdf_interact.c.i
+
+ffdf/fdf_interact.s: ffdf/fdf_interact.c.s
+
+.PHONY : ffdf/fdf_interact.s
+
+# target to generate assembly for a file
+ffdf/fdf_interact.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.s
+.PHONY : ffdf/fdf_interact.c.s
+
+ffdf/fdf_interface.o: ffdf/fdf_interface.c.o
+
+.PHONY : ffdf/fdf_interface.o
+
+# target to build an object file
+ffdf/fdf_interface.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o
+.PHONY : ffdf/fdf_interface.c.o
+
+ffdf/fdf_interface.i: ffdf/fdf_interface.c.i
+
+.PHONY : ffdf/fdf_interface.i
+
+# target to preprocess a source file
+ffdf/fdf_interface.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.i
+.PHONY : ffdf/fdf_interface.c.i
+
+ffdf/fdf_interface.s: ffdf/fdf_interface.c.s
+
+.PHONY : ffdf/fdf_interface.s
+
+# target to generate assembly for a file
+ffdf/fdf_interface.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.s
+.PHONY : ffdf/fdf_interface.c.s
+
+ffdf/fdf_key_control.o: ffdf/fdf_key_control.c.o
+
+.PHONY : ffdf/fdf_key_control.o
+
+# target to build an object file
+ffdf/fdf_key_control.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o
+.PHONY : ffdf/fdf_key_control.c.o
+
+ffdf/fdf_key_control.i: ffdf/fdf_key_control.c.i
+
+.PHONY : ffdf/fdf_key_control.i
+
+# target to preprocess a source file
+ffdf/fdf_key_control.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.i
+.PHONY : ffdf/fdf_key_control.c.i
+
+ffdf/fdf_key_control.s: ffdf/fdf_key_control.c.s
+
+.PHONY : ffdf/fdf_key_control.s
+
+# target to generate assembly for a file
+ffdf/fdf_key_control.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.s
+.PHONY : ffdf/fdf_key_control.c.s
+
+ffdf/fdf_mouse_control.o: ffdf/fdf_mouse_control.c.o
+
+.PHONY : ffdf/fdf_mouse_control.o
+
+# target to build an object file
+ffdf/fdf_mouse_control.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o
+.PHONY : ffdf/fdf_mouse_control.c.o
+
+ffdf/fdf_mouse_control.i: ffdf/fdf_mouse_control.c.i
+
+.PHONY : ffdf/fdf_mouse_control.i
+
+# target to preprocess a source file
+ffdf/fdf_mouse_control.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.i
+.PHONY : ffdf/fdf_mouse_control.c.i
+
+ffdf/fdf_mouse_control.s: ffdf/fdf_mouse_control.c.s
+
+.PHONY : ffdf/fdf_mouse_control.s
+
+# target to generate assembly for a file
+ffdf/fdf_mouse_control.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.s
+.PHONY : ffdf/fdf_mouse_control.c.s
+
+ffdf/fdf_parse.o: ffdf/fdf_parse.c.o
+
+.PHONY : ffdf/fdf_parse.o
+
+# target to build an object file
+ffdf/fdf_parse.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o
+.PHONY : ffdf/fdf_parse.c.o
+
+ffdf/fdf_parse.i: ffdf/fdf_parse.c.i
+
+.PHONY : ffdf/fdf_parse.i
+
+# target to preprocess a source file
+ffdf/fdf_parse.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.i
+.PHONY : ffdf/fdf_parse.c.i
+
+ffdf/fdf_parse.s: ffdf/fdf_parse.c.s
+
+.PHONY : ffdf/fdf_parse.s
+
+# target to generate assembly for a file
+ffdf/fdf_parse.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.s
+.PHONY : ffdf/fdf_parse.c.s
+
+ffdf/fdf_projections.o: ffdf/fdf_projections.c.o
+
+.PHONY : ffdf/fdf_projections.o
+
+# target to build an object file
+ffdf/fdf_projections.c.o:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o
+.PHONY : ffdf/fdf_projections.c.o
+
+ffdf/fdf_projections.i: ffdf/fdf_projections.c.i
+
+.PHONY : ffdf/fdf_projections.i
+
+# target to preprocess a source file
+ffdf/fdf_projections.c.i:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.i
+.PHONY : ffdf/fdf_projections.c.i
+
+ffdf/fdf_projections.s: ffdf/fdf_projections.c.s
+
+.PHONY : ffdf/fdf_projections.s
+
+# target to generate assembly for a file
+ffdf/fdf_projections.c.s:
+	$(MAKE) -f CMakeFiles/ffdf.dir/build.make CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.s
+.PHONY : ffdf/fdf_projections.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2268,9 +2538,39 @@ help:
 	@echo "... ffdf/fdf.o"
 	@echo "... ffdf/fdf.i"
 	@echo "... ffdf/fdf.s"
-	@echo "... ffdf/fdf_parse_map.o"
-	@echo "... ffdf/fdf_parse_map.i"
-	@echo "... ffdf/fdf_parse_map.s"
+	@echo "... ffdf/fdf_draw.o"
+	@echo "... ffdf/fdf_draw.i"
+	@echo "... ffdf/fdf_draw.s"
+	@echo "... ffdf/fdf_exit.o"
+	@echo "... ffdf/fdf_exit.i"
+	@echo "... ffdf/fdf_exit.s"
+	@echo "... ffdf/fdf_gradient.o"
+	@echo "... ffdf/fdf_gradient.i"
+	@echo "... ffdf/fdf_gradient.s"
+	@echo "... ffdf/fdf_help_menu.o"
+	@echo "... ffdf/fdf_help_menu.i"
+	@echo "... ffdf/fdf_help_menu.s"
+	@echo "... ffdf/fdf_inits.o"
+	@echo "... ffdf/fdf_inits.i"
+	@echo "... ffdf/fdf_inits.s"
+	@echo "... ffdf/fdf_interact.o"
+	@echo "... ffdf/fdf_interact.i"
+	@echo "... ffdf/fdf_interact.s"
+	@echo "... ffdf/fdf_interface.o"
+	@echo "... ffdf/fdf_interface.i"
+	@echo "... ffdf/fdf_interface.s"
+	@echo "... ffdf/fdf_key_control.o"
+	@echo "... ffdf/fdf_key_control.i"
+	@echo "... ffdf/fdf_key_control.s"
+	@echo "... ffdf/fdf_mouse_control.o"
+	@echo "... ffdf/fdf_mouse_control.i"
+	@echo "... ffdf/fdf_mouse_control.s"
+	@echo "... ffdf/fdf_parse.o"
+	@echo "... ffdf/fdf_parse.i"
+	@echo "... ffdf/fdf_parse.s"
+	@echo "... ffdf/fdf_projections.o"
+	@echo "... ffdf/fdf_projections.i"
+	@echo "... ffdf/fdf_projections.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

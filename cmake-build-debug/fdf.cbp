@@ -91,7 +91,37 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h">
 			<Option target="ffdf"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse_map.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_exit.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_help_menu.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_inits.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interact.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interface.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_key_control.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_mouse_control.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse.c">
+			<Option target="ffdf"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_projections.c">
 			<Option target="ffdf"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_typedefs.h">

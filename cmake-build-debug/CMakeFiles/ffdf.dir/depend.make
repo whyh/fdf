@@ -11,15 +11,115 @@ CMakeFiles/ffdf.dir/ffdf/fdf.c.o: ../libft/ft_printf/ft_printf_typedefs.h
 CMakeFiles/ffdf.dir/ffdf/fdf.c.o: ../libft/libft.h
 CMakeFiles/ffdf.dir/ffdf/fdf.c.o: ../libft/libft_typedefs.h
 
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../ffdf/fdf.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../ffdf/fdf_parse_map.c
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../ffdf/fdf_typedefs.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/ft_gnl/ft_gnl.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/ft_printf/ft_printf.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/ft_printf/ft_printf_typedefs.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/libft.h
-CMakeFiles/ffdf.dir/ffdf/fdf_parse_map.c.o: ../libft/libft_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../ffdf/fdf_draw.c
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_draw.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../ffdf/fdf_exit.c
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_exit.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../ffdf/fdf_gradient.c
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_gradient.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../ffdf/fdf_help_menu.c
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_help_menu.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../ffdf/fdf_inits.c
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_inits.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../ffdf/fdf_interact.c
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interact.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../ffdf/fdf_interface.c
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_interface.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../ffdf/fdf_key_control.c
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_key_control.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../ffdf/fdf_mouse_control.c
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_mouse_control.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../ffdf/fdf_parse.c
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_parse.c.o: ../libft/libft_typedefs.h
+
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../ffdf/fdf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../ffdf/fdf_projections.c
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../ffdf/fdf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/ft_gnl/ft_gnl.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/ft_gnl/ft_gnl_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/ft_printf/ft_printf.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/ft_printf/ft_printf_typedefs.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/libft.h
+CMakeFiles/ffdf.dir/ffdf/fdf_projections.c.o: ../libft/libft_typedefs.h
 
 CMakeFiles/ffdf.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/ffdf.dir/libft/ft_atoi.c.o: ../libft/ft_gnl/ft_gnl.h

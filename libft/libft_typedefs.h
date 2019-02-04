@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/26 16:10:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2018/11/27 18:56:02 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/04 11:39:04 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,8 @@
 # define UC unsigned char
 # define UI unsigned int
 # define LD long double
+# define PI 3.14159265
+# define RAD PI / 180.0
+# define SIGNS "+-"
 
 #endif
