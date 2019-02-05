@@ -6,7 +6,7 @@
 #    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/21 20:30:28 by dderevyn          #+#    #+#              #
-#    Updated: 2019/02/04 16:26:53 by dderevyn         ###   ########.fr        #
+#    Updated: 2019/02/05 12:46:58 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ norm:
 	$(addprefix $(FDF_PATH),$(FDF_INCS))
 
 run:
-	@./fdf map
+	@./fdf maps/42.fdf
 
 test: rmt
 	@mkdir -p test

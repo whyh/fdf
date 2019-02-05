@@ -44,6 +44,7 @@ static int	fdf_close(void *param)
 
 	ptr = param;
 	fdf_memdel(ptr);
+	mlx_destroy_window(ptr->main->mlx, ptr->main->win);
 	exit(0);
 	return (1);
 }
