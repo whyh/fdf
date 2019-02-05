@@ -4,9 +4,9 @@ project(fdf)
 
 set(CMAKE_C_STANDARD 99)
 
-set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
+set(CMAKE_C_FLAGS "")
 
-LINK_DIRECTORIES(libft/ mlx/)
+LINK_DIRECTORIES(mlx/)
 
 AUX_SOURCE_DIRECTORY(ffdf FFDF)
 AUX_SOURCE_DIRECTORY(libft LIBFT)
@@ -19,4 +19,4 @@ add_executable(
         fdf_clion ${FT_PRINTF}
         fdf_clion ${FFDF})
 
-target_link_libraries(fdf_clion "-framework OpenGL" "-framework AppKit" "-lmlx" "-lft")
+target_link_libraries(fdf_clion "-framework OpenGL" "-framework AppKit" "-lmlx")
