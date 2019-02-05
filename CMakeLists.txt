@@ -4,47 +4,19 @@ project(fdf)
 
 set(CMAKE_C_STANDARD 99)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -framework OpenGL -framework AppKit")
+set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 
-AUX_SOURCE_DIRECTORY(libft LIBFT)
+LINK_DIRECTORIES(libft/ mlx/)
+
 AUX_SOURCE_DIRECTORY(ffdf FFDF)
-AUX_SOURCE_DIRECTORY(minilibx_macos MLX)
+AUX_SOURCE_DIRECTORY(libft LIBFT)
+AUX_SOURCE_DIRECTORY(libft/ft_printf FT_PRINTF)
+AUX_SOURCE_DIRECTORY(libft/ft_gnl FT_GNL)
 
-add_executable( ffdf ${LIBFT}
-                ffdf ${FFDF}
-                ffdf ${MLX}
-                ffdf/fdf.c
-                libft/ft_gnl/ft_gnl.c
-                libft/ft_gnl/ft_gnl.h
-                libft/ft_gnl/ft_gnl_typedefs.h
-                libft/ft_printf/ft_printf.c
-                libft/ft_printf/ft_printf_cspf.c
-                libft/ft_printf/ft_printf_diouxx.c
-                libft/ft_printf/ft_printf_fill_funs.c
-                libft/ft_printf/ft_printf_hash_zero_blank_plus.c
-                libft/ft_printf/ft_printf_parse.c
-                libft/ft_printf/ft_printf_prec.c
-                libft/ft_printf/ft_printf_width.c
-                libft/ft_printf/ft_printf_mod0_b_cap_udo.c
-                libft/ft_printf/ft_printf_0_base.c
-                libft/ft_printf/ft_printf_lhllhhl.c
-                libft/ft_printf/ft_printf_zjt.c
-                libft/ft_printf/ft_printf_r.c
-                libft/ft_printf/ft_printf_unicode.c
-                libft/ft_printf/ft_printf_parce_funs.c
-                libft/ft_printf/ft_printf_collor.c
-                libft/ft_printf/ft_printf.h
-                ffdf/fdf.h
-                ffdf/fdf_parse.c
-                ffdf/fdf_typedefs.h
-                ffdf/fdf_draw.c
-                ffdf/fdf_projections.c
-        ffdf/fdf_gradient.c
-                ffdf/fdf_interact.c
-                ffdf/fdf_help_menu.c
-                ffdf/fdf_interface.c
-                ffdf/fdf_mouse_control.c
-                ffdf/fdf_key_control.c
-        ffdf/fdf_inits.c ffdf/fdf_complete_map.c)
+add_executable(
+        fdf_clion ${LIBFT}
+        fdf_clion ${FT_GNL}
+        fdf_clion ${FT_PRINTF}
+        fdf_clion ${FFDF})
 
-link_libraries(libft/libft.a)
+target_link_libraries(fdf_clion "-framework OpenGL" "-framework AppKit" "-lmlx" "-lft")

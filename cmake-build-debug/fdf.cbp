@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ffdf">
-				<Option output="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/ffdf" prefix_auto="0" extension_auto="0"/>
+			<Target title="fdf_clion">
+				<Option output="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/fdf_clion" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,14 +53,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffdf"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdf_clion"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ffdf/fast">
-				<Option output="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/ffdf" prefix_auto="0" extension_auto="0"/>
+			<Target title="fdf_clion/fast">
+				<Option output="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/fdf_clion" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -75,300 +75,267 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffdf/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdf_clion/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf">
-			<Option target="ffdf"/>
+		<Unit filename="/Users/dderevyn/CLionProjects/fdf/cmake-build-debug/fdf_clion">
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf.h">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_complete_map.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_draw.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_gradient.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_help_menu.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_inits.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interact.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_interface.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_key_control.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_mouse_control.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_parse.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_projections.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/ffdf/fdf_typedefs.h">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_atoi.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_atoibase.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_bzero.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_gnl/ft_gnl.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_gnl/ft_gnl.h">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_gnl/ft_gnl_typedefs.h">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_isalnum.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_isalpha.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_isascii.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_isdigit.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_isprint.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_iswhitespace.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_itoabase.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_linelen.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_linetrim.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memalloc.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memccpy.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memchr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memcmp.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memcpy.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memdel.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memmove.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_memset.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf.h">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_0_base.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_collor.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_cspf.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_diouxx.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_fill_funs.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_hash_zero_blank_plus.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_lhllhhl.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_mod0_b_cap_udo.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_parce_funs.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_parse.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_prec.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_r.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_unicode.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_width.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_printf/ft_printf_zjt.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_putchar.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_putnbr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_putstr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strcat.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strchr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strclr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strcmp.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strcpy.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strdel.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strdup.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strequ.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strfdist.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strin.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strinject.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_striter.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strjoin.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strlcat.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strlen.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strncat.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strncmp.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strncpy.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strndup.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strnequ.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strnew.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strnstr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strrchr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strsplit.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strstr.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strsub.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_strtrim.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_tolower.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/libft/ft_toupper.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/font.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_init_loop.m">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_int_str_to_wordtab.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_new_image.m">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_new_window.h">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_new_window.m">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_rgb.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_shaders.c">
-			<Option target="ffdf"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/fdf/minilibx_macos/mlx_xpm.c">
-			<Option target="ffdf"/>
+			<Option target="fdf_clion"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/fdf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
