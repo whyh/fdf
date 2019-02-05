@@ -11,45 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1865f7dd-8908-4e05-a0f6-c488d231ec60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fdf_clion.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fdf_clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fdf_clion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/_README_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/font.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/font.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/libmlx.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_loop.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_new_image.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_new_window.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man1/mlx_pixel_put.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_loop.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_new_image.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_new_window.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/man/man3/mlx_pixel_put.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_init_loop.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_init_loop.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_int.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_int_str_to_wordtab.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_int_str_to_wordtab.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_image.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_image.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_window.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_window.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_new_window.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_rgb.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_shaders.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_shaders.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_xpm.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlx/mlx_xpm.o" beforeDir="false" />
-    </list>
+    <list default="true" id="1865f7dd-8908-4e05-a0f6-c488d231ec60" name="Default Changelist" comment="cmake perfected" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +36,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ffdf/fdf_parse.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="710">
-                  <caret line="151" selection-start-line="151" selection-end-line="151" />
+                <state relative-caret-position="422">
+                  <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
                 </state>
               </provider>
             </entry>
@@ -256,7 +218,7 @@
             <path>
               <item name="fdf" type="b2602c69:ProjectViewProjectNode" />
               <item name="fdf" type="462c0819:PsiDirectoryNode" />
-              <item name="mlx" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +293,7 @@
       <workItem from="1549095875849" duration="40126000" />
       <workItem from="1549190723561" duration="33545000" />
       <workItem from="1549269715240" duration="35536000" />
-      <workItem from="1549358382577" duration="5622000" />
+      <workItem from="1549358382577" duration="5789000" />
     </task>
     <task id="LOCAL-00001" summary="makefile">
       <created>1548834329112</created>
@@ -368,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549305666438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cmake perfected">
+      <created>1549368065688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1549368065688</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186564000" />
+    <option name="totallyTimeSpent" value="186731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,21 +354,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="157" y="23" width="2076" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13618486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21509434" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.314717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.314717" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997658" weight="0.33509433" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002342" side_tool="true" weight="0.4626415" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32981133" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4992974" weight="0.14188679" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4992974" visible="true" weight="0.14113207" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32830188" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.20150943" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3864151" />
@@ -440,7 +408,8 @@
     <MESSAGE value="makefile" />
     <MESSAGE value="map parsing" />
     <MESSAGE value="finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished" />
+    <MESSAGE value="cmake perfected" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmake perfected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffdf/fdf_parse.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffdf/fdf_typedefs.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -807,6 +769,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffdf/fdf_parse.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
