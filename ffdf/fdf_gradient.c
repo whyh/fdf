@@ -75,9 +75,9 @@ void			fdf_parse_gradient(t_fdf_main *main, char *line, int *i, int p)
 	{
 		(*i) += 3;
 		if (ft_strin(HEX, line[(*i)]))
-			main->color[p] = ft_atoibase(HEX_CAP, &(line[(*i)]));
+			main->color[p] = (int)ft_atoibase(HEX_CAP, &(line[(*i)]));
 		else if (ft_strin(HEX_CAP, line[(*i)]))
-			main->color[p] = ft_atoibase(HEX_CAP, &(line[(*i)]));
+			main->color[p] = (int)ft_atoibase(HEX_CAP, &(line[(*i)]));
 		while (ft_strin(HEX_CAP, line[(*i)]) || ft_strin(HEX, line[(*i)]))
 			(*i)++;
 		b = main->color[p] % 1000;

@@ -14,11 +14,11 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
+# include <stdint.h>
 # include <stddef.h>
 # include "../libft.h"
 # include "ft_printf_typedefs.h"
 
-int		ft_printf(const char *format, ...);
 void	ft_printf_parse_flags(char **format, t_printf_mods *mods);
 void	ft_printf_parse_f_width(char **format, t_printf_mods *mods,
 		va_list *args);

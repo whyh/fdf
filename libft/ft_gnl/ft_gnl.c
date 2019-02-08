@@ -6,123 +6,81 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 16:25:21 by dderevyn          #+#    #+#             */
-/*   Updated: 2018/12/07 17:43:30 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/08 21:36:45 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_gnl.h"
+#include "ft_gnl_typedefs.h"
 
-static int		static_del(t_fd *node, t_fd **head)
+static int		ft_gnl_del(t_gnl_list *node, t_gnl_list **head)
 {
-	t_fd	*tmp;
+	t_gnl_list	*tmp;
 
 	if (*head == node)
 	{
-		ft_strdel(&((*head)->content));
-		(*head)->fd = -42;
+		ft_strdel(&((*head)->buff));
+		(*head)->fd = -1;
 		return (1);
 	}
 	tmp = *head;
 	while (tmp->next != node)
 		tmp = tmp->next;
 	tmp->next = node->next;
-	if (node->content)
-		ft_strdel(&(node->content));
+	if (node->buff)
+		ft_strdel(&(node->buff));
 	ft_memdel((void**)&node);
 	return (1);
 }
 
-static int		static_valid_n_pull(t_fd **head, char **line, int fd)
+static int		ft_gnl_valid_n_pull(t_gnl_list **head, char **line, int fd)
 {
-	size_t	ln;
-	t_fd	*node;
+	t_gnl_data	data;
 
-	if (line != NULL && *line != NULL)
-		*line = NULL;
-	node = *head;
-	while (node != NULL && node->fd != fd)
-		node = node->next;
-	if (node == NULL)
-		return (-42);
-	ln = ft_linelen(node->content);
-	if (fd < 0 || !(*line = ft_strnew(ln)))
+	if (fd < 0 || !line)
 		return (-1);
-	ft_strncpy(*line, node->content, ln);
-	if (node->content[ln] == '\0' && static_del(node, head))
-		return (-42);
-	if (node->content[ln] == '\n' && node->content[ln + 1] == '\0')
-	{
-		static_del(node, head);
+	data.node = *head;
+	*line = ft_strnew(0);
+	while (data.node != NULL && data.node->fd != fd)
+		data.node = data.node->next;
+	if (data.node == NULL)
+		return (2);
+	data.len = ft_strchr_i(data.node->buff, '\n');
+	ft_strninject(line, data.node->buff, -1, data.len);
+	if (data.node->buff[data.len] == '\0' && ft_gnl_del(data.node, head))
+		return (2);
+	if (data.node->buff[data.len] == '\n'
+	&& data.node->buff[data.len + 1] == '\0' && ft_gnl_del(data.node, head))
 		return (1);
-	}
-	if (!(ft_linetrim(&(node->content), ln + 1)))
-		return (-1);
+	data.tmp = ft_strndup(&(data.node->buff[data.len + 1]), -1);
+	ft_strdel(&(data.node->buff));
+	data.node->buff = data.tmp;
 	return (1);
 }
 
-static t_fd		*static_store(char *content, int fd, t_fd *fdl)
+int				ft_gnl(const int fd, char **line)
 {
-	t_fd	*node;
+	static t_gnl_list	*fdl;
+	t_gnl_data			data;
 
-	if (content[0] == '\0')
-		content[0] = '\n';
-	if (!(node = (t_fd *)malloc(sizeof(t_fd))))
-		return (NULL);
-	if (!(node->content = ft_strdup(content)))
-		return (NULL);
-	node->fd = fd;
-	node->next = fdl;
-	return (node);
-}
-
-static int		gnl_part2(char **line, ssize_t rbl, char rbuf[])
-{
-	char	*wbuf;
-	char	*tmpp;
-	size_t	ln;
-
-	if (rbl == -1)
-		return (-1);
-	rbuf[rbl] = '\0';
-	ln = ft_linelen(rbuf);
-	if (!(wbuf = ft_strnew(ln)))
-		return (-1);
-	ft_strncpy(wbuf, rbuf, ln);
-	tmpp = NULL;
-	if (!(tmpp = ft_strjoin(*line, wbuf)))
-		return (-1);
-	if (*line)
-		ft_strdel(line);
-	*line = tmpp;
-	ft_strdel(&wbuf);
-	return (-42);
-}
-
-int				ft_gnl(int fd, char **line)
-{
-	static t_fd	*fdl;
-	char		rbuf[GNL_BUFF_SIZE + 1];
-	ssize_t		rbl;
-	int			retflag;
-	size_t		ln;
-
-	if ((retflag = static_valid_n_pull(&fdl, line, fd)) != -42)
-		return (retflag);
-	while ((rbl = read(fd, rbuf, GNL_BUFF_SIZE)))
+	if ((data.ret_flag = ft_gnl_valid_n_pull(&fdl, line, fd)) != 2)
+		return (data.ret_flag);
+	while ((data.rlen = read(fd, data.rbuff, FT_GNL_BUFF_SIZE)) > 0)
 	{
-		if ((retflag = gnl_part2(line, rbl, rbuf)) != -42)
-			return (retflag);
-		if ((ssize_t)(ln = ft_linelen(rbuf)) != rbl)
+		data.rbuff[data.rlen] = '\0';
+		data.len = ft_strchr_i(data.rbuff, '\n');
+		ft_strninject(line, data.rbuff, -1, data.len);
+		if (data.len != data.rlen && data.len + 1 != data.rlen)
 		{
-			if ((ssize_t)ln + 1 != rbl)
-				if (!(fdl = static_store(rbuf + ln + 1, fd, fdl)))
-					return (-1);
-			if (*line == NULL)
-				*line = ft_strnew(0);
-			return (1);
+			data.node = (t_gnl_list*)malloc(sizeof(t_gnl_list));
+			data.node->buff = ft_strndup(&(data.rbuff[data.len + 1]), -1);
+			data.node->fd = fd;
+			data.node->next = fdl;
+			fdl = data.node;
 		}
+		if (data.len != data.rlen)
+			return (1);
 	}
-	if (*line == NULL)
-		*line = ft_strnew(0);
-	return (**line != '\0' ? 1 : 0);
+	if (data.rlen < 0)
+		return (-1);
+	return (**line ? 1 : 0);
 }

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/26 16:10:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/04 11:39:04 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/08 22:02:01 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,11 @@
 # define LIBFT_TYPEDEFS_H
 
 # define LLONG_MAX 9223372036854775807
-# define INT_MIN -2147483648
+# define LLONG_MIN -9223372036854775808
+# define LLONG_MIN_S "-9223372036854775808"
+# define WHITESPACES "\011\012\013\040"
+# define ALPHABET "abcdefghijklmnopqrstuvwxyz"
+# define ALPHABET_CAP "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # define HEX "0123456789abcdef"
 # define HEX_CAP "0123456789ABCDEF"
 # define DEC "0123456789"
@@ -24,14 +28,17 @@
 # define LL long long
 # define UL unsigned long
 # define L long
+# define CUC const unsigned char
 # define US unsigned short
 # define S short
 # define D double
 # define UC unsigned char
 # define UI unsigned int
 # define LD long double
-# define PI 3.14159265
-# define RAD PI / 180.0
+# define CC const char
+# define ASCII_SHIFT 32
 # define SIGNS "+-"
+# define PI 3.14159265359
+# define RAD PI / 180
 
 #endif

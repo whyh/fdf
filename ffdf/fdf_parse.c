@@ -27,7 +27,7 @@ static void	fdf_parse_map(t_fdf_main *main, char *line, int row)
 			++i;
 		if (ft_strin(DEC, line[i]))
 		{
-			main->p3d[row][x] = ft_atoi(&(line[i]));
+			main->p3d[row][x] = (int)ft_atoibase(DEC, &(line[i]));
 			if (main->map_max_alt < main->p3d[row][x])
 				main->map_max_alt = main->p3d[row][x];
 			else if (main->map_min_alt > main->p3d[row][x])
@@ -108,14 +108,14 @@ static int	fdf_parse_rgb(t_fdf_main *main, char *rgb, int i)
 	while (i++ < 7)
 		if (!ft_strin(DEC, rgb[i - 1]) || !ft_strin(DEC, rgb[i + 10]))
 			return (0);
-	main->rgb0 = ft_atoi(&(rgb[0]));
+	main->rgb0 = (int)ft_atoibase(DEC, &(rgb[0]));
 	b = main->rgb0 % 1000;
 	main->rgb0 = main->rgb0 / 1000;
 	g = main->rgb0 % 1000;
 	main->rgb0 = main->rgb0 / 1000;
 	r = main->rgb0 % 1000;
 	main->rgb0 = 0 | (r << 16) | (g << 8) | b;
-	main->rgb1 = ft_atoi(&(rgb[10]));
+	main->rgb1 = (int)ft_atoibase(DEC, &(rgb[10]));
 	b = main->rgb1 % 1000;
 	main->rgb1 = main->rgb1 / 1000;
 	g = main->rgb1 % 1000;

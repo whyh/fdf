@@ -38,7 +38,7 @@ static void	ft_printf_prec_sn_usn_p_ndec(t_printf_mods mods,
 		return ;
 	head = ft_strnew((size_t)length);
 	head = ft_memset(head, '0', (size_t)length);
-	ft_strinject(&(node->buff), head, (size_t)i);
+	ft_strninject(&(node->buff), head, (size_t)i, -1);
 	ft_strdel(&head);
 }
 
@@ -72,9 +72,9 @@ static void	ft_printf_prec_float_fix(t_printf_buff *node, t_printf_mods mods,
 			if (size - i >= 0 && node->buff[size - i] != '-')
 				node->buff[size - i]++;
 			else if (node->buff[size - i] == '-' && (mod += 1))
-				ft_strinject(&(node->buff), "1", 1);
+				ft_strninject(&(node->buff), "1", 1, -1);
 			else if ((mod += 1))
-				ft_strinject(&(node->buff), "1", 0);
+				ft_strninject(&(node->buff), "1", 0, -1);
 		}
 		node->buff[size] = '\0';
 		--size;
@@ -98,8 +98,8 @@ static void	ft_printf_prec_float(t_printf_mods mods, t_printf_buff *node)
 		length = 0;
 	if (length < mods.prec)
 	{
-		tmp = ft_strnew((size_t)(mods.prec - length));
-		ft_memset(tmp, '0', (size_t)(mods.prec - length));
+		tmp = ft_strnew((size_t)(mods.prec - length - 1));
+		ft_memset(tmp, '0', (size_t)(mods.prec - length - 1));
 		tmp2 = ft_strjoin(node->buff, tmp);
 		ft_strdel(&(node->buff));
 		ft_strdel(&tmp);
