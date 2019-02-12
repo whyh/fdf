@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/30 11:19:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/02/05 12:37:23 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/02/12 11:09:04 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static int	fdf_read_file(t_fdf_main *main, int fd)
 
 	while (ft_gnl(fd, &line))
 	{
-		if (line == NULL && ft_printf("error: reading file failed\n"))
+		if ((!line || !*line) && ft_printf("error: reading file failed\n"))
 			return (0);
 		if (main->map_y >= FDF_MAX_MAP || main->map_x >= FDF_MAX_MAP)
 		{
@@ -134,8 +134,6 @@ int			fdf_parse(char *filename, char *rgb, t_fdf_main *main)
 		return (0);
 	if (!fdf_read_file(main, fd))
 	{
-		if (main->map_y >= FDF_MAX_MAP)
-			ft_printf("error: map is ridiculously big\n");
 		i = 0;
 		while (main->p3d[i])
 			ft_memdel((void**)(&(main->p3d[i++])));

@@ -36,5 +36,4 @@ typedef struct				s_gnl_data
 	int						ret_flag;
 }							t_gnl_data;
 
-
 #endif
