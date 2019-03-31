@@ -14,10 +14,10 @@ To zoom in/out hold `left cntrl` and use the `mouse wheel`
 //gif  
 To increase relative altitude hold `left cmnd` and use the `mouse wheel`  
 //gif  
-To reverse the altitude press `R`
-//gif
-and hold `H` to view the help menu
-//gif
+To reverse the altitude press `R`  
+//gif  
+and hold `H` to view the help menu  
+//gif  
 
 ## How to use
 First of all, you need to install `mlx` (mini lib x), and it's only compatible with MacOS(10.12 and later).  
