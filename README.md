@@ -7,7 +7,7 @@ Available projections `iso` `iso 2:1` `top view` `side view`
 Use nubmers `1` `2` `3` `4` to change the projection type  
 //gif  
 
-## There are few cool features
+## Few cool features
 To move the map hold `left cntrl` , then pick and move the top left corner of the map with `rbm`  
 //gif  
 To zoom in/out hold `left cntrl` and use the `mouse wheel`  
@@ -25,4 +25,4 @@ Run the program with a filename of the file that specifies a map, as a first arg
 `./fdf maps/pyramide.fdf`  
 Optionaly you can specify two colors for the linear gradient, by passing them as a second argument in rgb format  
 `./fdf maps/pyraide.fdf 255000255~001225099`  
-The second argument consists of two colors specified by RBG value of red then blue and green, each varying from `0` up to `255` (just like `RRRGGGBBB`), and the `~` between them.
+The second argument consists of two colors specified by RBG value of red then blue and green, each varying from `0` up to `255` (just like `RRRGGGBBB`), and a `~` between them.
