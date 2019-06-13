@@ -2,22 +2,22 @@
 ### Basic height-map rendering engine
 
 It converts a given heigth map into an image.  
-![fdf_42](../assets/image/fdf_42.png)
+![fdf_42](../assets/image/fdf_42.png)  
 Available projections `iso` `iso 2:1` `top view` `side view`  
 Use nubmers `1` `2` `3` `4` to change the projection type  
 ![projections](../assets/image/projections.gif)
 
 ## Few cool features
 To move map hold `left cntrl` , then pick and move the top left corner of the map with `rbm`  
-![move](../assets/image/move.gif)
+![move](../assets/image/move.gif)  
 To zoom in/out hold `left cntrl` and use the `mouse wheel`  
-![zoom](../assets/image/zoom.gif)
+![zoom](../assets/image/zoom.gif)  
 To increase relative altitude hold `left cmnd` and use the `mouse wheel`  
-![altitude](../assets/image/altitude.gif)
+![altitude](../assets/image/altitude.gif)  
 To reverse the altitude press `R`  
-![reverse_altitude](../assets/image/reverse_altitude.gif)
+![reverse_altitude](../assets/image/reverse_altitude.gif)  
 and hold `H` to view the help menu  
-![help_bar](../assets/image/help_bar.gif)
+![help_bar](../assets/image/help_bar.gif)  
 
 ## How to use
 First of all, you need to install `mlx` (mini lib x), and it's only compatible with MacOS(10.12 and later).  
