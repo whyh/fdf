@@ -1,7 +1,7 @@
 # fdf
 ### Basic height-map rendering engine
 
-It converts a given heigth map into an image.  
+It converts a given heigth map to image.  
 ![fdf_42](../assets/image/fdf_42.png)  
 Available projections `iso` `iso 2:1` `top view` `side view`  
 Use nubmers `1` `2` `3` `4` to change the projection type  
